@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import sequence
 
 def main():
     maxlen=100
-    st.title('Alexa Sentiment Classifier')
+    st.title('Amazon Echo Sentiment Classifier')
     review_description = st.text_area('Review Description:')
     prediction  = st.button('Sentiment Prediction')
     with open('tokenizing_text.pkl', 'rb') as fid:
